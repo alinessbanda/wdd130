@@ -10,7 +10,7 @@ body {
 }
 
 /* Combined styles for header and footer */
-header, grid, footer {
+header, footer, .grid {
     max-width: 840px; /* Set the maximum width */
     margin: 0 auto; /* Center the content */
     padding: 10px; /* Add some padding for spacing */
