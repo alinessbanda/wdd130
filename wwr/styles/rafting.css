@@ -5,10 +5,97 @@
     --accent2-color: #376996;
 }
 
+
+/* History section styles */
+#history {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--accent2-color);
+    color: white;
+}
+
+#history img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#history h2 {
+    color: var(--secondary-color);
+    font-size: 2em;
+}
+
+#history p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+#history .text-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+/* History Section */
+#history {
+    padding: 2rem;
+    background-color: var(--accent2-color);
+    color: white;
+}
+
+#history h2 {
+    color: var(--secondary-color);
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+
+#history p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Adventures Section */
+#adventure {
+    padding: 2rem;
+    background-color: #f0f0f0; /* Light background for contrast */
+}
+
+#adventure h2 {
+    color: var(--accent1-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.adventures {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-around; /* Space the items evenly */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.adventures figure {
+    margin: 1rem; /* Add margin around figures */
+    text-align: center; /* Center the text under each image */
+}
+
+.adventures img {
+    width: 100%; /* Make images responsive */
+    max-width: 200px; /* Limit max width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add some rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.adventures figcaption {
+    margin-top: 0.5rem; /* Space between image and caption */
+    font-weight: bold; /* Make caption text bold */
+}
+
 body {
-    font-family: 'Roboto', sans-serif ;
+    font-family: 'Roboto', sans-serif;
     color: var(--primary-color);
-    background-color: #fff;   
+    background-color: #fff;
 }
 
 .wrapper {
@@ -18,21 +105,21 @@ body {
 }
 
 h1 {
-  color: var(--secondary-color);
-  font-size: 2.5em;
-  text-align: center;
+    color: var(--secondary-color);
+    font-size: 2.5em;
+    text-align: center;
 }
 
 h2 {
-  color: var(--accent1-color);
-  font-size: 2em;
-  margin-top: 20px;
+    color: var(--accent1-color);
+    font-size: 2em;
+    margin-top: 20px;
 }
 
 p {
-  color: var(--primary-color);
-  font-size: 1.1em;
-  line-height: 1.6;
+    color: var(--primary-color);
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 
 footer a img {
@@ -43,48 +130,72 @@ footer a img {
     margin: 0 10px;
 }
 
-.hero {
-    position: relative;
-    width: 100px;
-    height: 400px;
-    overflow: hidden;
+/* Style for the header */
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Two columns: 1 for logo, 3 for nav */
+    align-items: center;
+    padding: 20px 0;
+    background-color: var(--accent1-color); /* Primary header background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
 }
 
-.hero img {
-    display: block;
-    width: 100px;
+/* Logo image styling */
+.logo img {
+    width: 150px; /* Scaled width for consistency */
     height: auto;
+    margin-left: 20px; /* Spacing from the left side */
 }
 
-.hero h1 {
-    position: absolute;
-    color: white;
-    left: 50%;
-    top: 20%;
-    font-size: 3em;
+/* Navigation styling using Flexbox */
+nav {
+    display: flex;
+    justify-content: flex-end; /* Align links to the right side */
+    gap: 1.5rem; /* Space between navigation links */
 }
 
-.hero article {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    max-width: 250px;
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
+nav a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: white; /* White text for contrast */
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners for a modern look */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
-.hero article img {
-    float: right;
-    margin-left: 15px;
-    width: 100px;
-    max-width: 200px;
-    height: auto;
+nav a:hover {
+    background-color: var(--accent2-color); /* Hover effect on links */
 }
 
-.hero article p {
-    margin: 0;
-    line-height: 1.6;
+nav a.active {
+    background-color: var(--secondary-color); /* Highlight the current page link */
+    color: var(--primary-color); /* Change text color when active */
+}
+
+footer {
+    display: flex; /* Use Flexbox for the footer */
+    justify-content: space-between; /* Space between text and social links */
+    align-items: center; /* Center items vertically */
+    padding: 1rem 20px; /* Add padding */
+    background-color: var(--accent2-color); /* Optional: Add a background color */
+    color: var(--primary-color); /* Match text color */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+}
+
+.sociallinks {
+    display: flex; /* Use Flexbox for social links */
+    gap: 10px; /* Add space between social icons */
+}
+
+.sociallinks a img {
+    width: 40px; /* Set a fixed width for icons */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.sociallinks a img:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
 }
