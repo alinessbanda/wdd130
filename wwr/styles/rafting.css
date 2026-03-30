@@ -2,7 +2,9 @@
     --primary-color: #1f3c88;
     --secondary-color: #f4a261;
     --accent1-color: #264653;
-    --accent2-color: #ffffff;
+    --accent2-color: #a8dadc;
+    --light-color: #fff;
+    /* added for consistency */
     --heading-font: "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -28,9 +30,8 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    background-color: var(--accent1-color);
-    color: #fff;
-    /* force white */
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
     text-align: center;
     font-size: 1.5rem;
     padding: 16px;
@@ -67,8 +68,8 @@ article {
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--light-color);
 }
 
 /* Article overlay */
@@ -78,8 +79,7 @@ article {
     left: 20px;
     right: 20px;
     background-color: rgba(0, 0, 0, 0.5);
-    /* dark overlay */
-    color: #fff;
+    color: var(--light-color);
     padding: 16px;
 }
 
@@ -90,11 +90,11 @@ article {
     margin-left: 10px;
 }
 
-/* ✅ FIXED article heading (no background conflict) */
+/* Article headings inside hero */
 .hero article h2 {
     font-size: 1.2rem;
     text-align: center;
-    color: #fff;
+    color: var(--light-color);
     background: none;
     padding: 0;
 }
@@ -106,6 +106,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 16px;
+    color: var(--light-color);
+    /* ensure text is visible */
 }
 
 header img {
@@ -115,8 +117,7 @@ header img {
 }
 
 nav a {
-    color: #fff;
-    /* white = strong contrast on orange */
+    color: var(--light-color);
     font-weight: bold;
     margin: 0 10px;
     text-decoration: none;
@@ -131,7 +132,7 @@ footer {
     background-color: var(--accent1-color);
     text-align: center;
     padding: 16px;
-    color: #fff;
+    color: var(--light-color);
 }
 
 /* Social icons layout */
@@ -148,10 +149,10 @@ footer .socialmedia img {
     height: auto;
 }
 
-/* ✅ Section headings (accessible + clean) */
+/* Section headings */
 section h2 {
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--light-color);
     font-size: 1.5rem;
     padding: 16px;
     text-align: center;
@@ -160,7 +161,8 @@ section h2 {
     margin-bottom: 16px;
 }
 
+/* Ensure all hero text uses variables */
 .hero article,
 .hero article p {
-    color: #fff;
+    color: var(--light-color);
 }
