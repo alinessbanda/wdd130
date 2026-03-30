@@ -101,7 +101,7 @@ article {
 
 /* HEADER */
 header {
-    background-color: var(--secondary-color);
+    background-color: var(--accent1-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -114,24 +114,24 @@ header img {
     height: auto;
 }
 
-/* NAV */
 nav a {
-    text-decoration: none;
-    color: var(--accent1-color);
+    color: #fff;
+    /* white = strong contrast on orange */
     font-weight: bold;
     margin: 0 10px;
+    text-decoration: none;
 }
 
-/* Hover using accent2 */
 nav a:hover {
-    color: var(--accent2-color);
+    color: var(--secondary-color);
 }
 
 /* FOOTER */
 footer {
-    background-color: var(--secondary-color);
+    background-color: var(--accent1-color);
     text-align: center;
     padding: 16px;
+    color: #fff;
 }
 
 /* Social icons layout */
@@ -163,9 +163,4 @@ section h2 {
 .hero article,
 .hero article p {
     color: #fff;
-}
-
-/* Ensure all h2 are readable */
-h2 {
-    color: #fff !important;
 }
