@@ -25,13 +25,13 @@ footer {
     margin: 0 auto;
 }
 
+/* ✅ FIXED headings (removed duplicate color) */
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
     background-color: var(--accent1-color);
-    text-align: center;
     color: #fff;
+    text-align: center;
     font-size: 1.5rem;
     padding: 16px;
 }
@@ -48,6 +48,7 @@ article {
     text-decoration: none;
 }
 
+/* HERO */
 .hero {
     position: relative;
 }
@@ -58,6 +59,7 @@ article {
     height: auto;
 }
 
+/* Hero title overlay */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -69,28 +71,35 @@ article {
     color: #fff;
 }
 
+/* Article overlay */
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
     right: 20px;
     background-color: rgba(0, 0, 0, 0.5);
-    /* darker overlay so white text is visible */
+    /* dark overlay */
     color: #fff;
+    padding: 16px;
 }
 
+/* Article image */
 .hero article img {
     float: right;
     width: 125px;
     margin-left: 10px;
 }
 
+/* ✅ FIXED article heading (no background conflict) */
 .hero article h2 {
     font-size: 1.2rem;
     text-align: center;
-    color: #fff
+    color: #fff;
+    background: none;
+    padding: 0;
 }
 
+/* HEADER */
 header {
     background-color: var(--secondary-color);
     display: flex;
@@ -102,10 +111,10 @@ header {
 header img {
     display: block;
     width: 120px;
-    /* adjust if too big/small */
     height: auto;
 }
 
+/* NAV */
 nav a {
     text-decoration: none;
     color: var(--accent1-color);
@@ -113,46 +122,40 @@ nav a {
     margin: 0 10px;
 }
 
+/* Hover using accent2 */
 nav a:hover {
     color: var(--accent2-color);
 }
 
+/* FOOTER */
 footer {
     background-color: var(--secondary-color);
-    /* SAME as header */
     text-align: center;
     padding: 16px;
 }
 
+/* Social icons layout */
 footer .socialmedia {
     display: flex;
     justify-content: center;
-    /* center the icons horizontally */
     gap: 16px;
-    /* space between icons */
     align-items: center;
-    /* vertically center if needed */
     margin: 0;
-    /* remove any default margins */
 }
 
 footer .socialmedia img {
     width: 32px;
     height: auto;
-    vertical-align: middle;
 }
 
+/* ✅ Section headings (accessible + clean) */
 section h2 {
     background-color: var(--primary-color);
-    /* hero blue or #1f3c88 */
     color: #fff;
-    /* white text for contrast */
     font-size: 1.5rem;
-    /* same as h1/h2 hero style */
     padding: 16px;
     text-align: center;
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 16px;
-    /* spacing under header */
 }
