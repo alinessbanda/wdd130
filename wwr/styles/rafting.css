@@ -74,7 +74,9 @@ article {
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
+    /* darker overlay so white text is visible */
+    color: #fff;
 }
 
 .hero article img {
@@ -85,9 +87,8 @@ article {
 
 .hero article h2 {
     font-size: 1.2rem;
-    /* smaller than main section h2 */
     text-align: center;
-    color: #ffffff;
+    color: #fff
 }
 
 header {
