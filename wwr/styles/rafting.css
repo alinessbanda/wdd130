@@ -128,19 +128,24 @@ nav a:hover {
 
 /* FOOTER */
 footer {
+    position: relative;
     background-color: var(--accent1-color);
-    text-align: center;
+    align-items: center;
     padding: 16px;
     color: var(--light-color);
+    display: flex;
+}
+
+footer p {
+    position: absolute;
+    margin: 0;
 }
 
 /* Social icons layout */
 footer .socialmedia {
     display: flex;
-    justify-content: center;
     gap: 16px;
-    align-items: center;
-    margin: 0;
+    margin-left: auto;
 }
 
 footer .socialmedia img {
@@ -164,4 +169,87 @@ section h2 {
 .hero article,
 .hero article p {
     color: var(--light-color);
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1.5fr auto 1.5fr;
+    /* left text | image | right text */
+    align-items: center;
+    gap: 24px;
+}
+
+.history-content img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.history {
+    background-color: #f8f9fa;
+    /* light background */
+    padding: 20px;
+    margin: 20px 16px;
+    border-radius: 8px;
+}
+
+.history h2 {
+    background: none;
+    /* remove blue background */
+    color: var(--accent1-color);
+    /* darker readable text */
+    text-align: center;
+    padding: 0;
+    margin-bottom: 16px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.history-content p {
+    line-height: 1.4;
+    /* more breathing room */
+    font-size: 1rem;
+    max-width: 400px;
+}
+
+.adventures {
+    background-color: #f8f9fa;
+    /* same as history */
+    padding: 20px;
+    margin: 20px 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.adventures h2 {
+    background: none;
+    color: var(--accent1-color);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    /* helps on smaller screens */
+}
+
+.adventure-gallery figure {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: var(--accent1-color);
 }
