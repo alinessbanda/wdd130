@@ -123,7 +123,8 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--light-color);
 }
 
 /* FOOTER */
@@ -313,7 +314,7 @@ textarea {
 }
 
 button {
-    background-color: var(--primary-color);
+    background-color: var(--accent1-color);
     color: var(--light-color);
     padding: 10px;
     border: none;
@@ -362,12 +363,231 @@ button:hover {
 
 /* Nav highlighting */
 nav a.active {
-    color: var(--secondary-color);
+    color: var(--light-color);
     border-bottom: 2px solid var(--secondary-color);
-    padding-bottom: 2px;
 }
 
 .visually-hidden {
     position: absolute;
     left: -9999px;
+}
+
+/* HOME PAGE STYLES */
+
+.cta {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 16px;
+    border-radius: 8px;
+}
+
+.cta h2 {
+    background: none;
+    color: var(--accent1-color);
+}
+
+.cta a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--accent1-color);
+    color: var(--light-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta a:hover {
+    background-color: var(--accent2-color);
+}
+
+.newsletter {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 20px 16px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    background: none;
+    color: var(--accent1-color);
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.home-grid {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px 16px;
+}
+
+.home-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* HOME HERO ONLY */
+.home-hero h1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background: none;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.home-grid h2 {
+    background: none;
+    color: var(--accent1-color);
+    margin-bottom: 16px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+/* TRIPS PAGE STYLES */
+
+.trips {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 20px 16px;
+    border-radius: 8px;
+}
+
+.trips h2 {
+    background: none;
+    color: var(--accent1-color);
+    margin-bottom: 16px;
+}
+
+/* GRID FOR TRIPS */
+.trip-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* EACH CARD */
+.trip {
+    background-color: var(--light-color);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.trip img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.trip h3 {
+    margin-top: 10px;
+    color: var(--accent1-color);
+}
+
+.trip p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.trip-table {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 20px 16px;
+    border-radius: 8px;
+}
+
+.trip-table h2 {
+    background: none;
+    color: var(--accent1-color);
+    margin-bottom: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+/* EQUIPMENT SECTION */
+
+.equipment {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 20px 16px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.equipment h2 {
+    background: none;
+    color: var(--accent1-color);
+    margin-bottom: 16px;
+}
+
+.equipment-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.equipment-gallery figure {
+    flex: 1;
+    margin: 0;
+}
+
+.equipment-gallery img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.equipment-gallery figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: var(--accent1-color);
+}
+
+.about-hero h1,
+.trips-hero h1,
+.home-hero h1 {
+    background: rgba(0, 0, 0, 0.4);
+    /* soft grey overlay */
+    color: var(--light-color);
+    padding: 12px;
+    border-radius: 6px;
 }

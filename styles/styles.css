@@ -122,3 +122,8 @@ footer {
 .indent {
     padding-left: 2rem;
 }
+
+nav a.active {
+    color: yellow;
+    border-bottom: 2px solid yellow;
+}
